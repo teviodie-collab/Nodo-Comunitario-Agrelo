@@ -1,0 +1,9 @@
+NODO COMUNITARIO AGRELO — WEB V3 CON VIDEO
+
+1. Descomprimir el ZIP completo.
+2. NO abrir index.html desde dentro del ZIP.
+3. Deben quedar juntos index.html y recorrido-render.mp4.
+4. Abrir index.html con Chrome o Edge.
+
+Las imágenes están incrustadas en index.html, por lo que no pueden perderse.
+El video conserva la calidad del archivo subido: no se recomprimió; solo se preparó para reproducción web (fast start).
