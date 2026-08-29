@@ -1,23 +1,10 @@
-NODO COMUNITARIO AGRELO — V9
+NODO COMUNITARIO AGRELO — V10
 
 Subir a la raíz del repositorio:
 - index.html
 - recorrido-render.mp4
 - carpeta assets completa
 
-Ajustes realizados:
-- créditos finales eliminados del cierre y dejados solo en el pie;
-- pie actualizado con autores + asesor + universidad + año;
-- mapas recortados y centrados para verse mejor, especialmente en celular;
-- créditos de portada más pequeños;
-- título principal reducido en móvil para que entre bien;
-- numeración de apartados corregida con una secuencia más clara:
-  01 Introducción
-  02 Diagnóstico
-  03 Necesidades y derechos
-  04 Antecedentes
-  05 Proyecto
-  06 Espacios
-  07 Atmósferas
-  08 Materialidad
-- video sin cambios.
+Cambios de esta versión:
+- reemplazados los tres mapas de territorio por los nuevos recortes realizados por la usuaria;
+- se mantienen todos los demás ajustes de la V9 (créditos, numeración, portada y móvil).
