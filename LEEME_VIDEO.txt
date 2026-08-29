@@ -1,0 +1,28 @@
+NODO COMUNITARIO AGRELO — VERSIÓN 2
+
+Esta versión:
+- no utiliza PDFs ni láminas completas como fuente de información ampliada;
+- desarrolla el contenido dentro de la propia página;
+- usa una única familia tipográfica sans serif en todo el sitio;
+- incorpora imágenes recortadas y optimizadas directamente dentro del HTML;
+- está preparada para usar un video como portada.
+
+VIDEO DE PORTADA
+----------------
+1. Comprimir el video a MP4 / H.264.
+2. Renombrarlo exactamente:
+   recorrido-render.mp4
+3. Colocarlo en la MISMA carpeta que:
+   Nodo_Comunitario_Agrelo_v2.html
+
+El HTML detecta automáticamente el video. Si el archivo no está presente,
+muestra el render aéreo como portada sin romper el diseño.
+
+Recomendación para el video:
+- 1920x1080
+- H.264
+- 25 o 30 fps
+- sin necesidad de más de 8–12 Mbps para una defensa local
+- si es para publicar en web: preferiblemente 4–8 Mbps
+
+La web no necesita internet para funcionar.
