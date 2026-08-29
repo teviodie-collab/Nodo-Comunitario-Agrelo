@@ -1,20 +1,13 @@
-NODO COMUNITARIO AGRELO — V12
-
-Subir a la raíz del repositorio:
-- index.html
-- recorrido-render.mp4
-- carpeta assets completa
+NODO COMUNITARIO AGRELO — V13
 
 Cambios:
-- numeración ajustada a la estructura real de la tesis:
-  01 Introducción
-  02 Diagnóstico
-  03 Antecedentes
-  04 Proyecto
-- Necesidades y derechos permanece dentro de 02 Diagnóstico.
-- Espacios, Atmósferas y Materialidad permanecen dentro de 04 Proyecto.
-- eliminados los números 07 y 08 como capítulos independientes.
-- unificado el tamaño de todos los títulos principales de sección.
-- portada y cierre conservan una jerarquía tipográfica especial.
-- se mantienen los tres mapas del mismo tamaño.
-- video sin cambios.
+- se eliminó el '04' delante de Atmósferas y Materialidad;
+- se renombraron los subtítulos para que describan mejor el recorrido:
+  Antecedentes · Referentes y criterios proyectuales
+  Proyecto · Implantación y organización del nodo
+  Proyecto · Programa y espacios
+  Proyecto · Experiencia y atmósferas
+  Proyecto · Materialidad y lenguaje arquitectónico
+- los subtítulos de las secciones claras tienen el mismo tamaño, peso y color bordó;
+- Atmósferas mantiene el mismo tamaño y peso, con tono arena para conservar contraste sobre fondo oscuro;
+- se mantienen todos los demás ajustes de V12.
