@@ -1,9 +1,20 @@
-NODO COMUNITARIO AGRELO — V11
+NODO COMUNITARIO AGRELO — V12
 
 Subir a la raíz del repositorio:
 - index.html
 - recorrido-render.mp4
 - carpeta assets completa
 
-Cambio de esta versión:
-- los tres mapas de Territorio quedan con el mismo tamaño visual dentro de la web.
+Cambios:
+- numeración ajustada a la estructura real de la tesis:
+  01 Introducción
+  02 Diagnóstico
+  03 Antecedentes
+  04 Proyecto
+- Necesidades y derechos permanece dentro de 02 Diagnóstico.
+- Espacios, Atmósferas y Materialidad permanecen dentro de 04 Proyecto.
+- eliminados los números 07 y 08 como capítulos independientes.
+- unificado el tamaño de todos los títulos principales de sección.
+- portada y cierre conservan una jerarquía tipográfica especial.
+- se mantienen los tres mapas del mismo tamaño.
+- video sin cambios.

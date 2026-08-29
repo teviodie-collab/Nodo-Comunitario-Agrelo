@@ -436,6 +436,65 @@ footer > a{white-space:nowrap}
   .territory-triptych{grid-template-columns:1fr}
   .territory-equal{max-width:560px;margin:0 auto}
 }
+
+/* V12 · CAPÍTULOS DE LA TESIS + TÍTULOS UNIFICADOS */
+.heading h2,
+.gallery-head h2,
+.materiality-copy h2,
+.full-image-copy h2{
+  font-size:clamp(42px,5.2vw,78px);
+  line-height:.96;
+  letter-spacing:-.05em;
+  font-weight:650;
+}
+
+/* Todos los números corresponden al capítulo real de la tesis */
+.section-num{
+  font-size:9px;
+  letter-spacing:.17em;
+}
+
+/* Materialidad adopta la misma jerarquía que las otras secciones */
+.materiality-copy h2{
+  margin:0 0 20px;
+}
+
+/* Portada y cierre conservan jerarquía propia */
+.hero-title h1{
+  font-size:clamp(58px,8.7vw,142px);
+}
+.closing h2{
+  font-size:clamp(57px,7.4vw,114px);
+}
+
+@media(max-width:900px){
+  .heading h2,
+  .gallery-head h2,
+  .materiality-copy h2,
+  .full-image-copy h2{
+    font-size:clamp(38px,7vw,62px);
+  }
+}
+
+@media(max-width:560px){
+  .heading h2,
+  .gallery-head h2,
+  .materiality-copy h2,
+  .full-image-copy h2{
+    font-size:38px;
+    line-height:.98;
+  }
+
+  .hero-title h1{
+    font-size:clamp(36px,11.5vw,54px);
+    line-height:.88;
+  }
+
+  .closing h2{
+    font-size:44px;
+    line-height:.9;
+  }
+}
 </style></head><body>
 <div id="progress"></div><header id="header"><a class="brand" href="#inicio"><span class="brand-mark">N</span><span class="brand-text"><b>Nodo Comunitario</b><small>Agrelo · Luján de Cuyo</small></span></a><button class="menu" id="menu">Menú</button><nav id="nav"><a href="#objetivos">Introducción</a><a href="#territorio">Diagnóstico</a><a href="#antecedentes">Antecedentes</a><a href="#proyecto">Proyecto</a><a href="#recorrer">Atmósferas</a></nav></header>
 <main>
@@ -471,11 +530,11 @@ footer > a{white-space:nowrap}
 <div><strong>1.820</strong><span>habitantes alcanzados</span></div>
 <div><strong>80%</strong><span>de la población vulnerable</span></div>
 <div><strong>1,1 km</strong><span>radio de proximidad</span></div>
-</div></section><section class="section rights" id="derechos"><span class="section-num" style="color:rgba(255,255,255,.5)">03</span><div class="heading"><div><p class="kicker">Diagnóstico · Necesidades y derechos</p><h2>Arquitectura para acercar derechos.</h2></div><p class="intro">El programa se organiza alrededor de cuatro dimensiones de la vida comunitaria. Cada pieza tiene una función concreta, pero también forma parte de una idea mayor: hacer más próximo el acceso al cuidado, la salud, la integración y el espacio público.</p></div><div class="rights-grid"><article class="right reveal"><span class="n">01</span><div class="circle">●</div><h3>Derecho al cuidado</h3><p>El jardín maternal incorpora espacios destinados al cuidado, la estimulación y el desarrollo integral durante la primera infancia, integrándolos a una red comunitaria más amplia.</p></article><article class="right reveal"><span class="n">02</span><div class="circle">✚</div><h3>Derecho a la salud</h3><p>El centro de salud acerca atención primaria, prevención y promoción de la salud, reduciendo la distancia entre la vida cotidiana del barrio y un servicio esencial.</p></article><article class="right reveal"><span class="n">03</span><div class="circle">◎</div><h3>Derecho a la integración</h3><p>El centro integrador comunitario ofrece ámbitos para capacitación, acompañamiento, fortalecimiento comunitario y actividades compartidas que consolidan redes sociales.</p></article><article class="right reveal"><span class="n">04</span><div class="circle">⌁</div><h3>Derecho al espacio público</h3><p>Recreación, deporte y encuentro comunitario se incorporan como parte del programa. El espacio público deja de ser un resto entre edificios y se transforma en infraestructura social.</p></article></div><div class="rights-summary reveal">
+</div></section><section class="section rights" id="derechos"><span class="section-num" style="color:rgba(255,255,255,.5)">02</span><div class="heading"><div><p class="kicker">Diagnóstico · Necesidades y derechos</p><h2>Arquitectura para acercar derechos.</h2></div><p class="intro">El programa se organiza alrededor de cuatro dimensiones de la vida comunitaria. Cada pieza tiene una función concreta, pero también forma parte de una idea mayor: hacer más próximo el acceso al cuidado, la salud, la integración y el espacio público.</p></div><div class="rights-grid"><article class="right reveal"><span class="n">01</span><div class="circle">●</div><h3>Derecho al cuidado</h3><p>El jardín maternal incorpora espacios destinados al cuidado, la estimulación y el desarrollo integral durante la primera infancia, integrándolos a una red comunitaria más amplia.</p></article><article class="right reveal"><span class="n">02</span><div class="circle">✚</div><h3>Derecho a la salud</h3><p>El centro de salud acerca atención primaria, prevención y promoción de la salud, reduciendo la distancia entre la vida cotidiana del barrio y un servicio esencial.</p></article><article class="right reveal"><span class="n">03</span><div class="circle">◎</div><h3>Derecho a la integración</h3><p>El centro integrador comunitario ofrece ámbitos para capacitación, acompañamiento, fortalecimiento comunitario y actividades compartidas que consolidan redes sociales.</p></article><article class="right reveal"><span class="n">04</span><div class="circle">⌁</div><h3>Derecho al espacio público</h3><p>Recreación, deporte y encuentro comunitario se incorporan como parte del programa. El espacio público deja de ser un resto entre edificios y se transforma en infraestructura social.</p></article></div><div class="rights-summary reveal">
 <span class="rights-summary-line"></span>
 <p>Una misma estrategia territorial articula <b>cuidado</b>, <b>salud</b>, <b>integración</b> y <b>espacio público</b>. Los edificios no funcionan como piezas aisladas: el valor del nodo aparece en la proximidad y en las relaciones que se construyen entre ellos.</p>
 </div></section><section class="section antecedents" id="antecedentes">
-<span class="section-num">04</span>
+<span class="section-num">03</span>
 <div class="heading">
 <div>
 <p class="kicker">Antecedentes · Equipamiento barrial complementario</p>
@@ -512,8 +571,8 @@ footer > a{white-space:nowrap}
 <span>Circulación y función ordenada</span>
 </div>
 </div>
-</section><section class="section project" id="proyecto"><span class="section-num">05</span><div class="project-grid"><div class="project-copy"><p class="kicker">Proyecto · El nodo</p><h2>Cuatro programas que funcionan como una sola pieza territorial.</h2><p>La implantación distribuye los distintos equipamientos alrededor de una red común de circulaciones y espacios abiertos. Cada edificio conserva su identidad y sus requerimientos, pero la relación entre ellos es lo que termina de construir el nodo.</p><p>El espacio central, los recorridos peatonales, la vegetación y las áreas de permanencia construyen continuidad entre las piezas. De este modo, desplazarse de un programa a otro también significa atravesar espacios de encuentro, descanso y paisaje.</p><div class="programs"><div class="program"><span>01</span><b>Centro de salud</b><p>Atención, prevención y promoción de la salud.</p></div><div class="program"><span>02</span><b>Cancha + espacio público</b><p>Recreación, deporte y encuentro comunitario.</p></div><div class="program"><span>03</span><b>Centro integrador comunitario</b><p>Capacitación, participación y fortalecimiento social.</p></div><div class="program"><span>04</span><b>Jardín maternal</b><p>Cuidado y primera infancia.</p></div></div></div><div class="reveal"><div class="plan-card"><img alt="Implantación general del Nodo Comunitario Agrelo" src="assets/masterplan.webp"/></div><div class="media-caption"><span>Planimetría general</span><span>Organización del conjunto</span></div><div class="logic-grid"><div class="logic"><h4>Articulación</h4><p>Los recorridos conectan los distintos programas y permiten entender el conjunto como una red.</p></div><div class="logic"><h4>Centralidad</h4><p>El espacio central organiza orientaciones y encuentros, construyendo una referencia común para las piezas.</p></div><div class="logic"><h4>Paisaje</h4><p>Vegetación, agua y superficies de permanencia forman parte de la experiencia cotidiana del nodo.</p></div></div></div></div></section><section class="full-image"><img alt="Recorrido exterior del Nodo Comunitario Agrelo" src="assets/render-exterior.webp"/><div class="full-image-copy"><p class="kicker light">Una infraestructura de proximidad</p><h2>Un lugar común para servicios, cuidados y vida barrial.</h2><p>La propuesta reúne edificios, recorridos y paisaje en una única experiencia de proximidad. El objetivo no es solamente alojar funciones, sino construir un ámbito cotidiano donde distintos servicios y formas de encuentro puedan coexistir.</p></div></section><section class="section architecture" id="arquitectura">
-<span class="section-num">06</span>
+</section><section class="section project" id="proyecto"><span class="section-num">04</span><div class="project-grid"><div class="project-copy"><p class="kicker">Proyecto · El nodo</p><h2>Cuatro programas que funcionan como una sola pieza territorial.</h2><p>La implantación distribuye los distintos equipamientos alrededor de una red común de circulaciones y espacios abiertos. Cada edificio conserva su identidad y sus requerimientos, pero la relación entre ellos es lo que termina de construir el nodo.</p><p>El espacio central, los recorridos peatonales, la vegetación y las áreas de permanencia construyen continuidad entre las piezas. De este modo, desplazarse de un programa a otro también significa atravesar espacios de encuentro, descanso y paisaje.</p><div class="programs"><div class="program"><span>01</span><b>Centro de salud</b><p>Atención, prevención y promoción de la salud.</p></div><div class="program"><span>02</span><b>Cancha + espacio público</b><p>Recreación, deporte y encuentro comunitario.</p></div><div class="program"><span>03</span><b>Centro integrador comunitario</b><p>Capacitación, participación y fortalecimiento social.</p></div><div class="program"><span>04</span><b>Jardín maternal</b><p>Cuidado y primera infancia.</p></div></div></div><div class="reveal"><div class="plan-card"><img alt="Implantación general del Nodo Comunitario Agrelo" src="assets/masterplan.webp"/></div><div class="media-caption"><span>Planimetría general</span><span>Organización del conjunto</span></div><div class="logic-grid"><div class="logic"><h4>Articulación</h4><p>Los recorridos conectan los distintos programas y permiten entender el conjunto como una red.</p></div><div class="logic"><h4>Centralidad</h4><p>El espacio central organiza orientaciones y encuentros, construyendo una referencia común para las piezas.</p></div><div class="logic"><h4>Paisaje</h4><p>Vegetación, agua y superficies de permanencia forman parte de la experiencia cotidiana del nodo.</p></div></div></div></div></section><section class="full-image"><img alt="Recorrido exterior del Nodo Comunitario Agrelo" src="assets/render-exterior.webp"/><div class="full-image-copy"><p class="kicker light">Una infraestructura de proximidad</p><h2>Un lugar común para servicios, cuidados y vida barrial.</h2><p>La propuesta reúne edificios, recorridos y paisaje en una única experiencia de proximidad. El objetivo no es solamente alojar funciones, sino construir un ámbito cotidiano donde distintos servicios y formas de encuentro puedan coexistir.</p></div></section><section class="section architecture" id="arquitectura">
+<span class="section-num">04</span>
 <div class="heading">
 <div>
 <p class="kicker">Proyecto · Espacios</p>
@@ -557,7 +616,7 @@ footer > a{white-space:nowrap}
 </section><section class="gallery" id="recorrer">
 <div class="gallery-head">
 <div>
-<p class="kicker light">07 · Proyecto · Atmósferas</p>
+<p class="kicker light">04 · Proyecto · Atmósferas</p>
 <h2>Una arquitectura pensada desde la experiencia cotidiana.</h2>
 </div>
 <p>Las visualizaciones permiten recorrer el proyecto desde la escala de quien lo habita. Interiores, expansiones y espacio público comparten una materialidad cálida, transparencias, filtros solares y una relación constante con el paisaje.</p>
@@ -584,7 +643,7 @@ footer > a{white-space:nowrap}
 <div class="carousel-dots"><button aria-label="Ir a imagen 1" class="carousel-dot active" data-slide="0" type="button"></button><button aria-label="Ir a imagen 2" class="carousel-dot" data-slide="1" type="button"></button><button aria-label="Ir a imagen 3" class="carousel-dot" data-slide="2" type="button"></button></div>
 </div>
 </div>
-</section><section class="section materiality"><span class="section-num">08</span><div class="materiality-grid"><div class="materiality-copy reveal"><p class="kicker">08 · Proyecto · Lenguaje y materialidad</p><h3>Materiales que construyen cercanía, sombra y relación con el exterior.</h3><p>Las visualizaciones combinan tonos tierra, superficies de madera, mampostería y elementos verticales de protección que filtran la luz y construyen profundidad en las fachadas. En los interiores, esa misma paleta busca generar ámbitos próximos y reconocibles.</p><p>La materialidad no se plantea sólo como una decisión de imagen. También define filtros, sombras, transiciones entre interior y exterior y distintas condiciones para permanecer, encontrarse o circular.</p><div class="palette"><span class="swatch" style="background:#252525"></span><span class="swatch" style="background:#9e866d"></span><span class="swatch" style="background:#d6c7b3"></span><span class="swatch" style="background:#742e30"></span></div></div><div aria-label="Síntesis de materialidad" class="materiality-board reveal">
+</section><section class="section materiality"><span class="section-num">04</span><div class="materiality-grid"><div class="materiality-copy reveal"><p class="kicker">04 · Proyecto · Lenguaje y materialidad</p><h2>Materiales que construyen cercanía, sombra y relación con el exterior.</h2><p>Las visualizaciones combinan tonos tierra, superficies de madera, mampostería y elementos verticales de protección que filtran la luz y construyen profundidad en las fachadas. En los interiores, esa misma paleta busca generar ámbitos próximos y reconocibles.</p><p>La materialidad no se plantea sólo como una decisión de imagen. También define filtros, sombras, transiciones entre interior y exterior y distintas condiciones para permanecer, encontrarse o circular.</p><div class="palette"><span class="swatch" style="background:#252525"></span><span class="swatch" style="background:#9e866d"></span><span class="swatch" style="background:#d6c7b3"></span><span class="swatch" style="background:#742e30"></span></div></div><div aria-label="Síntesis de materialidad" class="materiality-board reveal">
 <div class="material-word"><span>01</span><b>Ladrillo</b><small>masa · textura · pertenencia</small></div>
 <div class="material-word"><span>02</span><b>Madera</b><small>calidez · proximidad</small></div>
 <div class="material-word"><span>03</span><b>Filtros</b><small>sombra · profundidad</small></div>
