@@ -1,14 +1,24 @@
-NODO COMUNITARIO AGRELO — V6
+NODO COMUNITARIO AGRELO — V8 · ORDEN DE PRESENTACIÓN
 
 Subir a la raíz del repositorio:
 - index.html
 - recorrido-render.mp4
+- carpeta assets completa
 
-VIDEO:
-- corresponde exactamente al archivo nuevo enviado por el usuario;
-- no fue recomprimido ni modificado;
-- comienza visualmente desde el segundo 6 mediante la web;
-- vuelve al segundo 6 al llegar al final del video;
-- duración del archivo: 80.93 segundos.
+Orden general:
+01 Introducción
+02 Diagnóstico
+03 Antecedentes
+04 Proyecto
+   - Nodo / implantación
+   - Espacios y plantas
+   - Atmósferas
+   - Materialidad
+Cierre
 
-La portada, tipografías, carrusel de Atmósferas y pie de página permanecen como en V5.
+Cambios:
+- eliminada por completo la sección de instalaciones/sistemas;
+- incorporada una síntesis de antecedentes como sección HTML, sin capturas;
+- reordenadas las secciones según la lógica del PDF de presentación;
+- mantenidas las imágenes limpias de la V7;
+- video sin cambios.
