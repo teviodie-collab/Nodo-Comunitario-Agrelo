@@ -1,24 +1,23 @@
-NODO COMUNITARIO AGRELO — V8 · ORDEN DE PRESENTACIÓN
+NODO COMUNITARIO AGRELO — V9
 
 Subir a la raíz del repositorio:
 - index.html
 - recorrido-render.mp4
 - carpeta assets completa
 
-Orden general:
-01 Introducción
-02 Diagnóstico
-03 Antecedentes
-04 Proyecto
-   - Nodo / implantación
-   - Espacios y plantas
-   - Atmósferas
-   - Materialidad
-Cierre
-
-Cambios:
-- eliminada por completo la sección de instalaciones/sistemas;
-- incorporada una síntesis de antecedentes como sección HTML, sin capturas;
-- reordenadas las secciones según la lógica del PDF de presentación;
-- mantenidas las imágenes limpias de la V7;
+Ajustes realizados:
+- créditos finales eliminados del cierre y dejados solo en el pie;
+- pie actualizado con autores + asesor + universidad + año;
+- mapas recortados y centrados para verse mejor, especialmente en celular;
+- créditos de portada más pequeños;
+- título principal reducido en móvil para que entre bien;
+- numeración de apartados corregida con una secuencia más clara:
+  01 Introducción
+  02 Diagnóstico
+  03 Necesidades y derechos
+  04 Antecedentes
+  05 Proyecto
+  06 Espacios
+  07 Atmósferas
+  08 Materialidad
 - video sin cambios.
