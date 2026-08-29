@@ -1,0 +1,24 @@
+NODO COMUNITARIO AGRELO — ARCHIVOS FINALES PARA GITHUB PAGES
+
+SUBIR A LA RAÍZ DEL REPOSITORIO:
+1. index.html
+2. recorrido-render.mp4
+
+NO subir solamente el ZIP. El ZIP es únicamente para descargar este paquete desde ChatGPT.
+Descomprimilo y subí index.html + recorrido-render.mp4 al repositorio.
+
+PESOS:
+- index.html: 8.2 MB
+- recorrido-render.mp4: 14.6 MB
+
+Ambos archivos están por debajo de 25 MB.
+
+VIDEO:
+- se reproduce automáticamente detrás del título;
+- sin controles visibles;
+- comienza en 00:06;
+- el archivo recibido dura 80.9 s, por lo que vuelve a 00:06 al llegar a su final real.
+
+PORTADA:
+Camila Cicconi · Juan Pablo Torres
+Asesor: Arq. Mario Raina · 2026
