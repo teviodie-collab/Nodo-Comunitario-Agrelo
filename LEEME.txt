@@ -1,9 +1,24 @@
-NODO COMUNITARIO AGRELO — WEB V3 CON VIDEO
+NODO COMUNITARIO AGRELO — WEB DE DIFUSIÓN V4
 
-1. Descomprimir el ZIP completo.
-2. NO abrir index.html desde dentro del ZIP.
-3. Deben quedar juntos index.html y recorrido-render.mp4.
-4. Abrir index.html con Chrome o Edge.
+Abrir
+-----
+1. Descomprimir el ZIP.
+2. Mantener juntos:
+   - index.html
+   - recorrido-render.mp4
+3. Abrir index.html en Chrome o Edge.
 
-Las imágenes están incrustadas en index.html, por lo que no pueden perderse.
-El video conserva la calidad del archivo subido: no se recomprimió; solo se preparó para reproducción web (fast start).
+Criterio de esta versión
+------------------------
+La web está planteada como una pieza de difusión del proyecto:
+- el video se reproduce automáticamente detrás del título principal;
+- no hay controles ni rótulos de video visibles;
+- la narrativa está pensada para público general, arquitectura e instituciones;
+- se conserva la condición de tesis y su enfoque social, sin tono publicitario;
+- las imágenes están incrustadas dentro del HTML;
+- el video está optimizado para mantener el paquete por debajo de 25 MB.
+
+Autora
+------
+María Camila Cicconi
+Tesis de Arquitectura · Universidad de Mendoza · 2026
