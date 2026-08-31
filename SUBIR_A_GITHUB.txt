@@ -1,13 +1,22 @@
-NODO COMUNITARIO AGRELO — V13
+NODO COMUNITARIO AGRELO — V14 · PRESENTACIÓN FINAL
 
-Cambios:
-- se eliminó el '04' delante de Atmósferas y Materialidad;
-- se renombraron los subtítulos para que describan mejor el recorrido:
-  Antecedentes · Referentes y criterios proyectuales
-  Proyecto · Implantación y organización del nodo
-  Proyecto · Programa y espacios
-  Proyecto · Experiencia y atmósferas
-  Proyecto · Materialidad y lenguaje arquitectónico
-- los subtítulos de las secciones claras tienen el mismo tamaño, peso y color bordó;
-- Atmósferas mantiene el mismo tamaño y peso, con tono arena para conservar contraste sobre fondo oscuro;
-- se mantienen todos los demás ajustes de V12.
+Subir a la raíz del repositorio:
+- index.html
+- recorrido-render.mp4
+- carpeta assets completa
+
+Cambios principales:
+- actualización del diagnóstico a 1.628 habitantes en el sector este y ≈80%;
+- nueva sección “La comunidad como punto de partida”;
+- necesidades comunitarias vinculadas al programa;
+- proceso proyectual en cinco decisiones;
+- nueva sección “Proyecto en números”;
+- marco real: integración socio-urbana, accesibilidad y ordenamiento territorial;
+- carrusel reorganizado con renders de Salud, Jardín Maternal y Centro Integrador de la presentación final;
+- vista aérea en gran formato;
+- nueva síntesis: distancia→proximidad, espacio de paso→lugar de encuentro, necesidades→oportunidades;
+- cierre breve “Arquitectura para acercar derechos”;
+- sin instalaciones técnicas;
+- video y mapas actuales conservados.
+
+Esta versión mantiene una presentación general del proyecto y evita orientar el discurso específicamente a una institución o municipio.
