@@ -1,22 +1,16 @@
-NODO COMUNITARIO AGRELO — V14 · PRESENTACIÓN FINAL
+NODO COMUNITARIO AGRELO — V18 · RENDERS EN ALTA CALIDAD
 
 Subir a la raíz del repositorio:
 - index.html
 - recorrido-render.mp4
 - carpeta assets completa
 
-Cambios principales:
-- actualización del diagnóstico a 1.628 habitantes en el sector este y ≈80%;
-- nueva sección “La comunidad como punto de partida”;
-- necesidades comunitarias vinculadas al programa;
-- proceso proyectual en cinco decisiones;
-- nueva sección “Proyecto en números”;
-- marco real: integración socio-urbana, accesibilidad y ordenamiento territorial;
-- carrusel reorganizado con renders de Salud, Jardín Maternal y Centro Integrador de la presentación final;
-- vista aérea en gran formato;
-- nueva síntesis: distancia→proximidad, espacio de paso→lugar de encuentro, necesidades→oportunidades;
-- cierre breve “Arquitectura para acercar derechos”;
-- sin instalaciones técnicas;
-- video y mapas actuales conservados.
-
-Esta versión mantiene una presentación general del proyecto y evita orientar el discurso específicamente a una institución o municipio.
+Cambios:
+- reemplazadas imágenes generales por renders originales HQ;
+- Centro de Salud: carrusel con SALUD 1, SALUD 4 y SALUD 6;
+- Jardín Maternal: carrusel con JARDIN 1, JARDIN 3 y JARDIN 5;
+- CIC: carrusel con CIC 1, CIC 2, CIC 3, CIC 4 y CIC 6;
+- conjunto y espacio público: EXT 1, EXT 2, EXT 3 y CAFE EXT 1;
+- swipe en celular + flechas en PC;
+- imágenes no críticas con carga diferida;
+- eliminados varios renders antiguos extraídos del PDF que ya no se usan.

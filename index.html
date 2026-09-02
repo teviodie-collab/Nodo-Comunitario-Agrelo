@@ -698,10 +698,267 @@ footer > a{white-space:nowrap}
   .aerial-copy{left:5vw;right:5vw;bottom:6vh}
   .aerial-copy h2{font-size:42px}
 }
+
+/* V15 · MAPAS FINALES + IDENTIFICACIÓN DE TESIS */
+.hero-credits .thesis-line{
+  margin:0 0 5px;
+  font-size:clamp(9px,.78vw,12px);
+  line-height:1.3;
+  font-weight:600;
+  letter-spacing:.07em;
+  text-transform:uppercase;
+  color:rgba(255,255,255,.78);
+  max-width:720px;
+}
+.footer-thesis-line{
+  font-size:8px !important;
+  line-height:1.45 !important;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  color:var(--vino);
+  font-weight:700;
+  margin-bottom:2px;
+}
+.footer-authors-line{font-size:9px;font-weight:700}
+.footer-advisor-line{font-size:8.5px}
+.territory-triptych{grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.territory-equal{background:#fff}
+.territory-equal img{
+  width:100%;aspect-ratio:1/1;object-fit:contain;object-position:center center;background:#fff
+}
+.territory-equal figcaption{min-height:46px}
+@media(max-width:900px){
+  .territory-triptych{grid-template-columns:1fr;gap:18px}
+  .territory-equal{width:min(100%,620px);margin-inline:auto}
+}
+@media(max-width:560px){
+  .hero-credits .thesis-line{font-size:8px;line-height:1.35;max-width:94%;margin-bottom:3px}
+  .hero-credits p:not(.thesis-line){font-size:10.5px}
+  .footer-thesis-line{font-size:7.5px !important;max-width:95%}
+  .territory-equal figcaption{font-size:8px;min-height:40px}
+}
+
+/* V17 · CIC con dos plantas */
+.program-plan-duo{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:18px;
+  align-items:start;
+}
+.program-plan-duo .program-plan-image{
+  margin:0;
+}
+.program-plan-duo .program-plan-image img{
+  width:100%;
+  height:auto;
+  display:block;
+}
+.program-plan-duo .program-plan-image figcaption{
+  margin-top:8px;
+}
+@media(max-width:900px){
+  .program-plan-duo{
+    grid-template-columns:1fr;
+    gap:14px;
+  }
+}
+
+/* V18 · RENDERS HQ + CARRUSELES POR SECTOR */
+.program-plan{align-items:start}
+.program-gallery{
+  grid-column:1 / -1;
+  width:100%;
+  margin-top:34px;
+  min-width:0;
+}
+.program-gallery-head{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
+  padding:0 2px 11px;
+  border-bottom:1px solid var(--linea);
+  margin-bottom:14px;
+}
+.program-gallery-head span{
+  font-size:9px;
+  line-height:1.35;
+  letter-spacing:.13em;
+  text-transform:uppercase;
+  color:var(--gris);
+}
+.program-gallery-head span:first-child{
+  color:var(--vino);
+  font-weight:750;
+}
+.sector-carousel{
+  width:100%;
+  min-width:0;
+}
+.sector-carousel-viewport{
+  width:100%;
+  overflow:hidden;
+  touch-action:pan-y;
+}
+.sector-carousel-track{
+  display:flex;
+  width:100%;
+  transition:transform .48s cubic-bezier(.22,.61,.36,1);
+  will-change:transform;
+}
+.sector-slide{
+  flex:0 0 100%;
+  width:100%;
+  margin:0;
+  min-width:0;
+}
+.sector-slide img{
+  width:100%;
+  aspect-ratio:16/9;
+  object-fit:cover;
+  object-position:center;
+  display:block;
+  background:#ece6de;
+}
+.sector-slide figcaption{
+  display:flex;
+  justify-content:space-between;
+  gap:22px;
+  min-height:42px;
+  padding:11px 2px 0;
+  color:#746d67;
+  font-size:9px;
+  line-height:1.45;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+.sector-slide figcaption span:first-child{
+  color:var(--tinta);
+  font-weight:700;
+}
+.sector-slide figcaption span:last-child{
+  text-align:right;
+}
+.sector-carousel-nav{
+  display:flex;
+  align-items:center;
+  gap:16px;
+  margin-top:18px;
+}
+.sector-carousel-arrows{display:flex;gap:8px}
+.sector-carousel-btn{
+  width:44px;
+  height:44px;
+  border-radius:50%;
+  border:1px solid var(--linea);
+  background:transparent;
+  color:var(--tinta);
+  display:grid;
+  place-items:center;
+  cursor:pointer;
+  font-size:18px;
+  transition:.2s ease;
+}
+.sector-carousel-btn:hover{
+  background:var(--vino);
+  color:#fff;
+  border-color:var(--vino);
+}
+.sector-carousel-counter{
+  min-width:72px;
+  font-size:9px;
+  letter-spacing:.14em;
+  color:var(--gris);
+}
+.sector-carousel-dots{
+  margin-left:auto;
+  display:flex;
+  gap:7px;
+  flex-wrap:wrap;
+  justify-content:flex-end;
+}
+.sector-carousel-dot{
+  width:7px;
+  height:7px;
+  padding:0;
+  border:0;
+  border-radius:50%;
+  background:#c7beb5;
+  cursor:pointer;
+}
+.sector-carousel-dot.active{background:var(--vino)}
+
+.gallery .general-render-gallery{
+  margin:0 6vw;
+  width:auto;
+}
+.gallery .program-gallery-head{
+  border-color:rgba(255,255,255,.2);
+}
+.gallery .program-gallery-head span{
+  color:rgba(255,255,255,.58);
+}
+.gallery .program-gallery-head span:first-child{
+  color:var(--arena);
+}
+.gallery .sector-slide figcaption{
+  color:rgba(255,255,255,.55);
+}
+.gallery .sector-slide figcaption span:first-child{
+  color:#fff;
+}
+.gallery .sector-carousel-btn{
+  border-color:rgba(255,255,255,.35);
+  color:#fff;
+}
+.gallery .sector-carousel-btn:hover{
+  background:#fff;
+  color:#251919;
+  border-color:#fff;
+}
+.gallery .sector-carousel-counter{
+  color:rgba(255,255,255,.6);
+}
+.gallery .sector-carousel-dot{
+  background:rgba(255,255,255,.27);
+}
+.gallery .sector-carousel-dot.active{background:#fff}
+
+@media(max-width:900px){
+  .program-gallery{margin-top:24px}
+  .gallery .general-render-gallery{margin:0 5vw}
+}
+@media(max-width:560px){
+  .program-gallery{margin-top:20px}
+  .program-gallery-head{align-items:flex-start}
+  .program-gallery-head span:last-child{
+    font-size:7.5px;
+    text-align:right;
+  }
+  .sector-slide img{aspect-ratio:16/10}
+  .sector-slide figcaption{
+    display:block;
+    min-height:54px;
+    padding-top:9px;
+    font-size:8px;
+  }
+  .sector-slide figcaption span{display:block}
+  .sector-slide figcaption span:last-child{
+    margin-top:3px;
+    text-align:left;
+    opacity:.8;
+  }
+  .sector-carousel-nav{margin-top:12px}
+  .sector-carousel-btn{
+    width:42px;
+    height:42px;
+  }
+  .sector-carousel-dots{gap:6px}
+}
 </style></head><body>
 <div id="progress"></div><header id="header"><a class="brand" href="#inicio"><span class="brand-mark">N</span><span class="brand-text"><b>Nodo Comunitario</b><small>Agrelo · Luján de Cuyo</small></span></a><button class="menu" id="menu">Menú</button><nav id="nav"><a href="#objetivos">Introducción</a><a href="#territorio">Diagnóstico</a><a href="#antecedentes">Antecedentes</a><a href="#proyecto">Proyecto</a><a href="#recorrer">Espacios</a><a href="#conclusion">Síntesis</a></nav></header>
 <main>
-<section class="hero" id="inicio"><img alt="Vista aérea del Nodo Comunitario Agrelo" class="poster" src="assets/vista-aerea.webp"/><video autoplay="" data-end="80.81" data-start="6" id="heroVideo" muted="" playsinline="" poster="assets/vista-aerea.webp" preload="auto"><source src="recorrido-render.mp4" type="video/mp4"/></video><div class="hero-shade"></div><div class="hero-inner"><div class="hero-top"><div class="hero-credits">
+<section class="hero" id="inicio"><img alt="Vista aérea del Nodo Comunitario Agrelo" class="poster" fetchpriority="high" src="assets/ext-1-hq.webp"/><video autoplay="" data-end="80.81" data-start="6" id="heroVideo" muted="" playsinline="" poster="assets/ext-1-hq.webp" preload="auto"><source src="recorrido-render.mp4" type="video/mp4"/></video><div class="hero-shade"></div><div class="hero-inner"><div class="hero-top"><div class="hero-credits"><p class="thesis-line">Tesis de grado de la carrera de Arquitectura y Urbanismo (Universidad de Mendoza)</p>
 <p>Camila Cicconi · Juan Pablo Torres</p>
 <p>Asesor: Arq. Mario Raina · 2026</p>
 </div></div><div class="hero-title"><h1>Nodo<br/>Comunitario<br/><span>Agrelo</span></h1><p>Equipamiento para la integración social y el fortalecimiento barrial.</p></div><div class="hero-bottom"><p>Un equipamiento comunitario pensado para <strong>acercar derechos.</strong></p><a href="#territorio">Conocer el proyecto ↓</a></div></div></section>
@@ -715,49 +972,7 @@ footer > a{white-space:nowrap}
 <article class="objective reveal"><span class="n">02</span><h3>Integración</h3><p>Reunir programas diferentes dentro de una estructura común, favoreciendo relaciones entre actividades de cuidado, salud, formación, recreación y encuentro.</p></article>
 <article class="objective reveal"><span class="n">03</span><h3>Espacio común</h3><p>Hacer del espacio exterior una parte activa del proyecto: recorridos, vegetación, agua y áreas de estancia articulan los edificios y construyen lugares de uso compartido.</p></article>
 <article class="objective reveal"><span class="n">04</span><h3>Identidad barrial</h3><p>Construir un conjunto reconocible, abierto al paisaje y capaz de funcionar como referencia comunitaria dentro de un territorio en proceso de consolidación.</p></article>
-</div></section><section class="section territory" id="territorio"><span class="section-num">02</span><div class="heading"><div><p class="kicker">Diagnóstico · Territorio</p><h2>El proyecto comienza antes que el edificio.</h2></div><p class="intro">Agrelo atraviesa un proceso de crecimiento que vuelve visible una pregunta central: ¿cómo puede la arquitectura acompañar la consolidación del territorio y acercar servicios a la vida cotidiana? El proyecto toma esa distancia entre población, infraestructura y oportunidades como punto de partida.</p></div><div class="territory-grid"><div class="copy-stack reveal"><div class="copy-block"><span class="label">Contexto</span><h3>Crecimiento poblacional y consolidación urbana.</h3><p>Los barrios populares han experimentado un importante crecimiento durante los últimos años. Ese proceso modifica las demandas del territorio y vuelve necesario pensar equipamientos que acompañen la consolidación urbana con respuestas próximas y accesibles.</p></div><div class="copy-block"><span class="label">Problema</span><h3>Infraestructura comunitaria insuficiente.</h3><p>El crecimiento no siempre fue acompañado por infraestructura capaz de responder a las necesidades de sus habitantes. El resultado es una mayor distancia respecto de servicios esenciales y de oportunidades vinculadas con el cuidado, la salud, la integración y la vida comunitaria.</p></div><div class="copy-block"><span class="label">Punto de partida</span><h3>Tierras Vivas, San José y Estación Agrelo.</h3><p>El crecimiento registrado en estos barrios evidencia la necesidad de incorporar un equipamiento comunitario capaz de acompañar los procesos de consolidación urbana y fortalecer el desarrollo social del sector.</p></div><div class="route"><span>Argentina</span><i>→</i><span>Mendoza</span><i>→</i><span>Luján de Cuyo</span><i>→</i><strong>Agrelo</strong></div></div><div class="territory-visuals reveal"><div class="territory-triptych reveal">
-<figure class="territory-figure territory-equal">
-<img alt="Localización general de los barrios populares de Agrelo" src="assets/mapa-barrios-general.webp"/>
-<figcaption>Agrelo · cinco barrios populares</figcaption>
-</figure>
-<figure class="territory-figure territory-equal">
-<img alt="Área priorizada: Estación Agrelo, Tierras Vivas y San José" src="assets/mapa-barrios-detalle.webp"/>
-<figcaption>Área priorizada · Estación Agrelo, Tierras Vivas y San José</figcaption>
-</figure>
-<figure class="territory-figure territory-equal">
-<img alt="Área de cobertura y acceso al equipamiento comunitario" src="assets/mapa-cobertura.webp"/>
-<figcaption>Proximidad · radio de cobertura 1,1 km</figcaption>
-</figure>
-</div></div></div><div class="territory-stats reveal"><div><strong>3</strong><span>barrios priorizados</span></div><div><strong>1.628</strong><span>habitantes en el sector este</span></div><div><strong>≈80%</strong><span>de la población residente en barrios populares de Agrelo</span></div><div><strong>1,1 km</strong><span>radio de proximidad · aprox. 15 minutos</span></div></div></section><section class="section community-voice" id="comunidad">
-<div class="heading">
-<div>
-<p class="kicker">Diagnóstico · La comunidad como punto de partida</p>
-<h2>Las necesidades expresadas en el territorio orientan el programa.</h2>
-</div>
-<p class="intro">Las entrevistas realizadas a familias del sector permitieron reconocer demandas vinculadas con salud, cuidado infantil, espacio público, capacitación y apoyo a iniciativas comunitarias. Esas necesidades se incorporan como punto de partida del proyecto arquitectónico.</p>
-</div>
-<div class="voice-grid">
-<blockquote class="voice-card reveal">
-<p>“Cuando alguien se enferma tenemos que trasladarnos varios kilómetros para recibir atención.”</p>
-<span>Salud · proximidad</span>
-</blockquote>
-<blockquote class="voice-card reveal">
-<p>“Muchos padres trabajan y no tienen dónde dejar a sus hijos durante el día.”</p>
-<span>Cuidado · primera infancia</span>
-</blockquote>
-<blockquote class="voice-card reveal">
-<p>“Hace falta un espacio para aprender un oficio.”</p>
-<span>Formación · oportunidades</span>
-</blockquote>
-</div>
-<div class="voice-flow reveal">
-<span>Necesidades detectadas</span>
-<b>→</b>
-<span>Estrategias de proyecto</span>
-<b>→</b>
-<span>Propuesta arquitectónica</span>
-</div>
-</section><section class="section rights" id="derechos"><span class="section-num" style="color:rgba(255,255,255,.5)">02</span><div class="heading"><div><p class="kicker">Diagnóstico · Necesidades, derechos y programa</p><h2>Cuatro necesidades se traducen en cuatro respuestas complementarias.</h2></div><p class="intro">El programa se organiza alrededor de cuatro dimensiones de la vida comunitaria. Cada pieza tiene una función concreta, pero también forma parte de una idea mayor: hacer más próximo el acceso al cuidado, la salud, la integración y el espacio público.</p></div><div class="rights-grid"><article class="right reveal"><span class="n">01</span><div class="circle">●</div><h3>Derecho al cuidado</h3><p>El jardín maternal incorpora espacios destinados al cuidado, la estimulación y el desarrollo integral durante la primera infancia, integrándolos a una red comunitaria más amplia.</p></article><article class="right reveal"><span class="n">02</span><div class="circle">✚</div><h3>Derecho a la salud</h3><p>El centro de salud acerca atención primaria, prevención y promoción de la salud, reduciendo la distancia entre la vida cotidiana del barrio y un servicio esencial.</p></article><article class="right reveal"><span class="n">03</span><div class="circle">◎</div><h3>Derecho a la integración</h3><p>El centro integrador comunitario ofrece ámbitos para capacitación, acompañamiento, fortalecimiento comunitario y actividades compartidas que consolidan redes sociales.</p></article><article class="right reveal"><span class="n">04</span><div class="circle">⌁</div><h3>Derecho al espacio público</h3><p>Recreación, deporte y encuentro comunitario se incorporan como parte del programa. El espacio público deja de ser un resto entre edificios y se transforma en infraestructura social.</p></article></div><div class="rights-summary reveal">
+</div></section><section class="section territory" id="territorio"><span class="section-num">02</span><div class="heading"><div><p class="kicker">Diagnóstico · Territorio</p><h2>El proyecto comienza antes que el edificio.</h2></div><p class="intro">Agrelo atraviesa un proceso de crecimiento que vuelve visible una pregunta central: ¿cómo puede la arquitectura acompañar la consolidación del territorio y acercar servicios a la vida cotidiana? El proyecto toma esa distancia entre población, infraestructura y oportunidades como punto de partida.</p></div><div class="territory-grid"><div class="copy-stack reveal"><div class="copy-block"><span class="label">Contexto</span><h3>Crecimiento poblacional y consolidación urbana.</h3><p>Los barrios populares han experimentado un importante crecimiento durante los últimos años. Ese proceso modifica las demandas del territorio y vuelve necesario pensar equipamientos que acompañen la consolidación urbana con respuestas próximas y accesibles.</p></div><div class="copy-block"><span class="label">Problema</span><h3>Infraestructura comunitaria insuficiente.</h3><p>El crecimiento no siempre fue acompañado por infraestructura capaz de responder a las necesidades de sus habitantes. El resultado es una mayor distancia respecto de servicios esenciales y de oportunidades vinculadas con el cuidado, la salud, la integración y la vida comunitaria.</p></div><div class="copy-block"><span class="label">Punto de partida</span><h3>Tierras Vivas, San José y Estación Agrelo.</h3><p>El crecimiento registrado en estos barrios evidencia la necesidad de incorporar un equipamiento comunitario capaz de acompañar los procesos de consolidación urbana y fortalecer el desarrollo social del sector.</p></div><div class="route"><span>Argentina</span><i>→</i><span>Mendoza</span><i>→</i><span>Luján de Cuyo</span><i>→</i><strong>Agrelo</strong></div></div><div class="territory-visuals reveal"><div class="territory-triptych reveal"><figure class="territory-figure territory-equal"><img alt="Localización general de Agrelo, rutas principales y estructura territorial" decoding="async" loading="lazy" src="assets/territorio-general.webp"/><figcaption>Agrelo · estructura territorial</figcaption></figure><figure class="territory-figure territory-equal"><img alt="Estación Agrelo, Tierras Vivas, San José y localización del terreno" decoding="async" loading="lazy" src="assets/territorio-barrios-terreno.webp"/><figcaption>Barrios priorizados · emplazamiento</figcaption></figure><figure class="territory-figure territory-equal"><img alt="Equipamientos existentes y radio de cobertura de 1,1 km" decoding="async" loading="lazy" src="assets/territorio-cobertura.webp"/><figcaption>Equipamientos · radio de proximidad</figcaption></figure></div></div></div><div class="territory-stats reveal"><div><strong>3</strong><span>barrios priorizados</span></div><div><strong>1.628</strong><span>habitantes en el sector este</span></div><div><strong>≈80%</strong><span>de la población residente en barrios populares de Agrelo</span></div><div><strong>1,1 km</strong><span>radio de proximidad · aprox. 15 minutos</span></div></div></section><section class="section rights" id="derechos"><span class="section-num" style="color:rgba(255,255,255,.5)">02</span><div class="heading"><div><p class="kicker">Diagnóstico · Necesidades, derechos y programa</p><h2>Cuatro necesidades se traducen en cuatro respuestas complementarias.</h2></div><p class="intro">El programa se organiza alrededor de cuatro dimensiones de la vida comunitaria. Cada pieza tiene una función concreta, pero también forma parte de una idea mayor: hacer más próximo el acceso al cuidado, la salud, la integración y el espacio público.</p></div><div class="rights-grid"><article class="right reveal"><span class="n">01</span><div class="circle">●</div><h3>Derecho al cuidado</h3><p>El jardín maternal incorpora espacios destinados al cuidado, la estimulación y el desarrollo integral durante la primera infancia, integrándolos a una red comunitaria más amplia.</p></article><article class="right reveal"><span class="n">02</span><div class="circle">✚</div><h3>Derecho a la salud</h3><p>El centro de salud acerca atención primaria, prevención y promoción de la salud, reduciendo la distancia entre la vida cotidiana del barrio y un servicio esencial.</p></article><article class="right reveal"><span class="n">03</span><div class="circle">◎</div><h3>Derecho a la integración</h3><p>El centro integrador comunitario ofrece ámbitos para capacitación, acompañamiento, fortalecimiento comunitario y actividades compartidas que consolidan redes sociales.</p></article><article class="right reveal"><span class="n">04</span><div class="circle">⌁</div><h3>Derecho al espacio público</h3><p>Recreación, deporte y encuentro comunitario se incorporan como parte del programa. El espacio público deja de ser un resto entre edificios y se transforma en infraestructura social.</p></article></div><div class="rights-summary reveal">
 <span class="rights-summary-line"></span>
 <p>Una misma estrategia territorial articula <b>cuidado</b>, <b>salud</b>, <b>integración</b> y <b>espacio público</b>. Los edificios no funcionan como piezas aisladas: el valor del nodo aparece en la proximidad y en las relaciones que se construyen entre ellos.</p>
 </div></section><section class="section antecedents" id="antecedentes">
@@ -798,7 +1013,7 @@ footer > a{white-space:nowrap}
 <span>Circulación y función ordenada</span>
 </div>
 </div>
-</section><section class="section project" id="proyecto"><span class="section-num">04</span><div class="project-grid"><div class="project-copy"><p class="kicker">Proyecto · Del diagnóstico a la propuesta</p><h2>Cuatro programas que funcionan como una sola pieza territorial.</h2><p>La implantación distribuye los distintos equipamientos alrededor de una red común de circulaciones y espacios abiertos. Cada edificio conserva su identidad y sus requerimientos, pero la relación entre ellos es lo que termina de construir el nodo.</p><p>El espacio central, los recorridos peatonales, la vegetación y las áreas de permanencia construyen continuidad entre las piezas. De este modo, desplazarse de un programa a otro también significa atravesar espacios de encuentro, descanso y paisaje.</p><div class="programs"><div class="program"><span>01</span><b>Centro de salud</b><p>Atención, prevención y promoción de la salud.</p></div><div class="program"><span>02</span><b>Cancha + espacio público</b><p>Recreación, deporte y encuentro comunitario.</p></div><div class="program"><span>03</span><b>Centro integrador comunitario</b><p>Capacitación, participación y fortalecimiento social.</p></div><div class="program"><span>04</span><b>Jardín maternal</b><p>Cuidado y primera infancia.</p></div></div></div><div class="reveal"><div class="plan-card"><img alt="Implantación general del Nodo Comunitario Agrelo" src="assets/masterplan.webp"/></div><div class="media-caption"><span>Planimetría general</span><span>Organización del conjunto</span></div><div class="logic-grid"><div class="logic"><h4>Articulación</h4><p>Los recorridos conectan los distintos programas y permiten entender el conjunto como una red.</p></div><div class="logic"><h4>Centralidad</h4><p>El espacio central organiza orientaciones y encuentros, construyendo una referencia común para las piezas.</p></div><div class="logic"><h4>Paisaje</h4><p>Vegetación, agua y superficies de permanencia forman parte de la experiencia cotidiana del nodo.</p></div></div></div></div></section><section class="full-image"><img alt="Recorrido exterior del Nodo Comunitario Agrelo" src="assets/render-exterior.webp"/><div class="full-image-copy"><p class="kicker light">Una infraestructura de proximidad</p><h2>Un lugar común para servicios, cuidados y vida barrial.</h2><p>La propuesta reúne edificios, recorridos y paisaje en una única experiencia de proximidad. El objetivo no es solamente alojar funciones, sino construir un ámbito cotidiano donde distintos servicios y formas de encuentro puedan coexistir.</p></div></section><section class="section project-facts" id="dimension">
+</section><section class="section project" id="proyecto"><span class="section-num">04</span><div class="project-grid"><div class="project-copy"><p class="kicker">Proyecto · Del diagnóstico a la propuesta</p><h2>Cuatro programas que funcionan como una sola pieza territorial.</h2><p>La implantación distribuye los distintos equipamientos alrededor de una red común de circulaciones y espacios abiertos. Cada edificio conserva su identidad y sus requerimientos, pero la relación entre ellos es lo que termina de construir el nodo.</p><p>El espacio central, los recorridos peatonales, la vegetación y las áreas de permanencia construyen continuidad entre las piezas. De este modo, desplazarse de un programa a otro también significa atravesar espacios de encuentro, descanso y paisaje.</p><div class="programs"><div class="program"><span>01</span><b>Centro de salud</b><p>Atención, prevención y promoción de la salud.</p></div><div class="program"><span>02</span><b>Cancha + espacio público</b><p>Recreación, deporte y encuentro comunitario.</p></div><div class="program"><span>03</span><b>Centro integrador comunitario</b><p>Capacitación, participación y fortalecimiento social.</p></div><div class="program"><span>04</span><b>Jardín maternal</b><p>Cuidado y primera infancia.</p></div></div></div><div class="reveal"><div class="plan-card"><img alt="Organización general del Nodo Comunitario Agrelo" decoding="async" loading="lazy" src="assets/masterplan-general-nuevo.webp"/></div><div class="media-caption"><span>Organización general</span><span>Relación entre programas y conjunto</span></div><div class="logic-grid"><div class="logic"><h4>Articulación</h4><p>Los recorridos conectan los distintos programas y permiten entender el conjunto como una red.</p></div><div class="logic"><h4>Centralidad</h4><p>El espacio central organiza orientaciones y encuentros, construyendo una referencia común para las piezas.</p></div><div class="logic"><h4>Paisaje</h4><p>Vegetación, agua y superficies de permanencia forman parte de la experiencia cotidiana del nodo.</p></div></div></div></div></section><section class="full-image"><img alt="Recorrido entre edificios del Nodo Comunitario Agrelo" decoding="async" loading="lazy" src="assets/ext-3-hq.webp"/><div class="full-image-copy"><p class="kicker light">Una infraestructura de proximidad</p><h2>Un lugar común para servicios, cuidados y vida barrial.</h2><p>La propuesta reúne edificios, recorridos y paisaje en una única experiencia de proximidad. El objetivo no es solamente alojar funciones, sino construir un ámbito cotidiano donde distintos servicios y formas de encuentro puedan coexistir.</p></div></section><section class="section project-facts" id="dimension">
 <div class="heading">
 <div>
 <p class="kicker">Proyecto · Escala y dimensión</p>
@@ -827,7 +1042,7 @@ footer > a{white-space:nowrap}
 <p class="kicker">Proyecto · Programas principales</p>
 <h2>Salud, cuidado e integración organizan las piezas principales del nodo.</h2>
 </div>
-<p class="intro">El proyecto organiza salud, cuidado e integración comunitaria en edificios diferenciados pero vinculados por el espacio público. Las plantas permiten reconocer cómo cada programa responde a sus usos específicos sin perder la continuidad del conjunto.</p>
+<p class="intro">El proyecto organiza salud, cuidado e integración comunitaria en edificios diferenciados pero vinculados por el espacio público. Las plantas seleccionadas permiten reconocer cómo cada programa responde a sus usos específicos sin perder la continuidad del conjunto.</p>
 </div>
 <article class="program-plan reveal">
 <div class="program-plan-copy">
@@ -836,10 +1051,10 @@ footer > a{white-space:nowrap}
 <p>La planta baja organiza consultorios, salas de espera, recepción y áreas de apoyo en relación directa con los recorridos exteriores. La atención primaria se incorpora al nodo como un servicio cercano y accesible.</p>
 </div>
 <figure class="program-plan-image">
-<img alt="Planta baja del Centro de Salud" src="assets/planta-salud.webp"/>
+<img alt="Planta baja del Centro de Salud" decoding="async" loading="lazy" src="assets/planta-salud.webp"/>
 <figcaption>Planta baja · Centro de Salud</figcaption>
 </figure>
-</article>
+<div class="program-gallery reveal"><div class="program-gallery-head"><span>Centro de Salud · atmósferas</span><span>Deslizá para ver más →</span></div><div class="sector-carousel" data-carousel="true"><div class="sector-carousel-viewport"><div class="sector-carousel-track"><figure aria-label="Imagen 1 de 3" class="sector-slide"><img alt="Centro de Salud · acceso" decoding="async" loading="lazy" src="assets/salud-1-hq.webp"/><figcaption><span>Centro de Salud · acceso</span><span>Ingreso y relación con los recorridos exteriores</span></figcaption></figure><figure aria-label="Imagen 2 de 3" class="sector-slide"><img alt="Consultorio" decoding="async" loading="lazy" src="assets/salud-4-hq.webp"/><figcaption><span>Consultorio</span><span>Atención primaria en un ámbito cálido y luminoso</span></figcaption></figure><figure aria-label="Imagen 3 de 3" class="sector-slide"><img alt="Sala de espera" decoding="async" loading="lazy" src="assets/salud-6-hq.webp"/><figcaption><span>Sala de espera</span><span>Permanencia, luz natural y continuidad interior</span></figcaption></figure></div></div><div class="sector-carousel-nav"><div class="sector-carousel-arrows"><button aria-label="Imagen anterior" class="sector-carousel-btn" data-prev="true" type="button">←</button><button aria-label="Imagen siguiente" class="sector-carousel-btn" data-next="true" type="button">→</button></div><span class="sector-carousel-counter">01 / 03</span><div class="sector-carousel-dots"><button aria-label="Ir a imagen 1" class="sector-carousel-dot active" data-slide="0" type="button"></button><button aria-label="Ir a imagen 2" class="sector-carousel-dot" data-slide="1" type="button"></button><button aria-label="Ir a imagen 3" class="sector-carousel-dot" data-slide="2" type="button"></button></div></div></div></div></article>
 <article class="program-plan reverse reveal">
 <div class="program-plan-copy">
 <span class="program-index">02 · CUIDADO</span>
@@ -847,67 +1062,39 @@ footer > a{white-space:nowrap}
 <p>Las aulas, áreas de juego, galería y espacios de apoyo se articulan alrededor de ámbitos seguros y próximos al exterior. El cuidado de la primera infancia se integra así a la vida cotidiana del nodo.</p>
 </div>
 <figure class="program-plan-image">
-<img alt="Planta baja del Jardín Maternal" src="assets/planta-jardin.webp"/>
+<img alt="Planta baja del Jardín Maternal" decoding="async" loading="lazy" src="assets/planta-jardin.webp"/>
 <figcaption>Planta baja · Jardín Maternal</figcaption>
 </figure>
-</article>
+<div class="program-gallery reveal"><div class="program-gallery-head"><span>Jardín Maternal · atmósferas</span><span>Deslizá para ver más →</span></div><div class="sector-carousel" data-carousel="true"><div class="sector-carousel-viewport"><div class="sector-carousel-track"><figure aria-label="Imagen 1 de 3" class="sector-slide"><img alt="Recepción" decoding="async" loading="lazy" src="assets/jardin-1-hq.webp"/><figcaption><span>Recepción</span><span>Acceso, orientación y bienvenida</span></figcaption></figure><figure aria-label="Imagen 2 de 3" class="sector-slide"><img alt="Salón de juegos" decoding="async" loading="lazy" src="assets/jardin-3-hq.webp"/><figcaption><span>Salón de juegos</span><span>Escala infantil, juego y movimiento</span></figcaption></figure><figure aria-label="Imagen 3 de 3" class="sector-slide"><img alt="Aula" decoding="async" loading="lazy" src="assets/jardin-5-hq.webp"/><figcaption><span>Aula</span><span>Aprendizaje y vínculo con el exterior</span></figcaption></figure></div></div><div class="sector-carousel-nav"><div class="sector-carousel-arrows"><button aria-label="Imagen anterior" class="sector-carousel-btn" data-prev="true" type="button">←</button><button aria-label="Imagen siguiente" class="sector-carousel-btn" data-next="true" type="button">→</button></div><span class="sector-carousel-counter">01 / 03</span><div class="sector-carousel-dots"><button aria-label="Ir a imagen 1" class="sector-carousel-dot active" data-slide="0" type="button"></button><button aria-label="Ir a imagen 2" class="sector-carousel-dot" data-slide="1" type="button"></button><button aria-label="Ir a imagen 3" class="sector-carousel-dot" data-slide="2" type="button"></button></div></div></div></div></article>
 <article class="program-plan reveal">
 <div class="program-plan-copy">
 <span class="program-index">03 · INTEGRACIÓN</span>
 <h3>Centro Integrador Comunitario</h3>
-<p>El centro integrador reúne espacios flexibles para encuentro, formación, participación y actividades comunitarias. Su relación con patios, circulaciones y áreas abiertas refuerza el carácter colectivo del proyecto.</p>
+<p>El Centro Integrador Comunitario se organiza en dos niveles complementarios. La planta baja reúne acceso, administración, sala de espera y espacios de uso común, mientras que la planta alta dispone talleres y áreas de apoyo para actividades artísticas, formación y encuentro.</p>
 </div>
+<div class="program-plan-duo">
 <figure class="program-plan-image">
-<img alt="Planta baja del Centro Integrador Comunitario" src="assets/planta-cic.webp"/>
+<img alt="Planta baja del Centro Integrador Comunitario" decoding="async" loading="lazy" src="assets/planta-cic.webp"/>
 <figcaption>Planta baja · Centro Integrador Comunitario</figcaption>
 </figure>
-</article>
-</section><section class="gallery" id="recorrer">
-<div class="gallery-head">
+<figure class="program-plan-image">
+<img alt="Planta alta del Centro Integrador Comunitario" decoding="async" loading="lazy" src="assets/planta-cic-alta.webp"/>
+<figcaption>Planta alta · Centro Integrador Comunitario</figcaption>
+</figure>
+</div><div class="program-gallery reveal"><div class="program-gallery-head"><span>Centro Integrador · atmósferas</span><span>Deslizá para ver más →</span></div><div class="sector-carousel" data-carousel="true"><div class="sector-carousel-viewport"><div class="sector-carousel-track"><figure aria-label="Imagen 1 de 5" class="sector-slide"><img alt="CIC · relación con el espacio público" decoding="async" loading="lazy" src="assets/cic-1-hq.webp"/><figcaption><span>CIC · relación con el espacio público</span><span>El edificio como frente activo del nodo</span></figcaption></figure><figure aria-label="Imagen 2 de 5" class="sector-slide"><img alt="Acceso al Centro Integrador" decoding="async" loading="lazy" src="assets/cic-2-hq.webp"/><figcaption><span>Acceso al Centro Integrador</span><span>Ingreso, fachada y relación con el paisaje</span></figcaption></figure><figure aria-label="Imagen 3 de 5" class="sector-slide"><img alt="Salón comunitario" decoding="async" loading="lazy" src="assets/cic-3-hq.webp"/><figcaption><span>Salón comunitario</span><span>Un espacio flexible para encuentro y actividades</span></figcaption></figure><figure aria-label="Imagen 4 de 5" class="sector-slide"><img alt="Biblioteca y formación" decoding="async" loading="lazy" src="assets/cic-4-hq.webp"/><figcaption><span>Biblioteca y formación</span><span>Lectura, estudio y aprendizaje compartido</span></figcaption></figure><figure aria-label="Imagen 5 de 5" class="sector-slide"><img alt="Taller de cerámica" decoding="async" loading="lazy" src="assets/cic-6-hq.webp"/><figcaption><span>Taller de cerámica</span><span>Formación, producción y desarrollo de oficios</span></figcaption></figure></div></div><div class="sector-carousel-nav"><div class="sector-carousel-arrows"><button aria-label="Imagen anterior" class="sector-carousel-btn" data-prev="true" type="button">←</button><button aria-label="Imagen siguiente" class="sector-carousel-btn" data-next="true" type="button">→</button></div><span class="sector-carousel-counter">01 / 05</span><div class="sector-carousel-dots"><button aria-label="Ir a imagen 1" class="sector-carousel-dot active" data-slide="0" type="button"></button><button aria-label="Ir a imagen 2" class="sector-carousel-dot" data-slide="1" type="button"></button><button aria-label="Ir a imagen 3" class="sector-carousel-dot" data-slide="2" type="button"></button><button aria-label="Ir a imagen 4" class="sector-carousel-dot" data-slide="3" type="button"></button><button aria-label="Ir a imagen 5" class="sector-carousel-dot" data-slide="4" type="button"></button></div></div></div></div></article>
+</section><section class="gallery" id="recorrer"><div class="gallery-head">
 <div>
-<p class="kicker light">Proyecto · Espacios para la vida cotidiana</p>
-<h2>La arquitectura se entiende también desde la experiencia de quienes la habitan.</h2>
+<p class="kicker light">Proyecto · El nodo y el espacio público</p>
+<h2>Recorridos, paisaje y lugares de encuentro articulan el conjunto.</h2>
 </div>
-<p>Los renders muestran cómo cada programa construye una atmósfera propia sin perder unidad material: accesos, cuidado, encuentro, formación y expansiones se vinculan con el paisaje y con el espacio público central.</p>
-</div>
-<div class="gallery-carousel" id="atmosphereCarousel">
-<div class="carousel-viewport">
-<div class="carousel-track"><article aria-label="Imagen 1 de 6" class="carousel-slide">
-<div class="carousel-frame"><img alt="Ingreso y recorrido exterior" src="assets/render-exterior.webp"/></div>
-<div class="carousel-caption"><span>Ingreso y recorrido exterior</span><span>El nodo se aproxima desde el espacio público</span></div>
-</article><article aria-label="Imagen 2 de 6" class="carousel-slide">
-<div class="carousel-frame"><img alt="Centro de Salud · atención y cuidado" src="assets/atmosfera-salud.webp"/></div>
-<div class="carousel-caption"><span>Centro de Salud · atención y cuidado</span><span>Recepción y espera como espacios de proximidad</span></div>
-</article><article aria-label="Imagen 3 de 6" class="carousel-slide">
-<div class="carousel-frame"><img alt="Jardín Maternal · cuidado y aprendizaje" src="assets/atmosfera-jardin.webp"/></div>
-<div class="carousel-caption"><span>Jardín Maternal · cuidado y aprendizaje</span><span>Escala infantil, luz y relación con el exterior</span></div>
-</article><article aria-label="Imagen 4 de 6" class="carousel-slide">
-<div class="carousel-frame"><img alt="Centro Integrador · vida comunitaria" src="assets/atmosfera-cic-encuentro.webp"/></div>
-<div class="carousel-caption"><span>Centro Integrador · vida comunitaria</span><span>Espacios flexibles para encuentro y actividades</span></div>
-</article><article aria-label="Imagen 5 de 6" class="carousel-slide">
-<div class="carousel-frame"><img alt="Centro Integrador · formación" src="assets/atmosfera-cic-formacion.webp"/></div>
-<div class="carousel-caption"><span>Centro Integrador · formación</span><span>Biblioteca, aprendizaje y desarrollo</span></div>
-</article><article aria-label="Imagen 6 de 6" class="carousel-slide">
-<div class="carousel-frame"><img alt="Patios y expansiones" src="assets/atmosfera-patio.webp"/></div>
-<div class="carousel-caption"><span>Patios y expansiones</span><span>Transiciones entre interior, paisaje y vida colectiva</span></div>
-</article></div>
-</div>
-<div class="carousel-nav">
-<div class="carousel-arrows">
-<button aria-label="Imagen anterior" class="carousel-btn carousel-prev" type="button">←</button>
-<button aria-label="Imagen siguiente" class="carousel-btn carousel-next" type="button">→</button>
-</div>
-<span aria-live="polite" class="carousel-counter">01 / 06</span>
-<div class="carousel-dots"><button aria-label="Ir a imagen 1" class="carousel-dot active" data-slide="0" type="button"></button><button aria-label="Ir a imagen 2" class="carousel-dot" data-slide="1" type="button"></button><button aria-label="Ir a imagen 3" class="carousel-dot" data-slide="2" type="button"></button><button aria-label="Ir a imagen 4" class="carousel-dot" data-slide="3" type="button"></button><button aria-label="Ir a imagen 5" class="carousel-dot" data-slide="4" type="button"></button><button aria-label="Ir a imagen 6" class="carousel-dot" data-slide="5" type="button"></button></div>
-</div>
-</div>
-</section><section class="section materiality"><span class="section-num">04</span><div class="materiality-grid"><div class="materiality-copy reveal"><p class="kicker">Proyecto · Materialidad y lenguaje arquitectónico</p><h2>Materiales que construyen cercanía, sombra y relación con el exterior.</h2><p>Las visualizaciones combinan tonos tierra, superficies de madera, mampostería y elementos verticales de protección que filtran la luz y construyen profundidad en las fachadas. En los interiores, esa misma paleta busca generar ámbitos próximos y reconocibles.</p><p>La materialidad no se plantea sólo como una decisión de imagen. También define filtros, sombras, transiciones entre interior y exterior y distintas condiciones para permanecer, encontrarse o circular.</p><div class="palette"><span class="swatch" style="background:#252525"></span><span class="swatch" style="background:#9e866d"></span><span class="swatch" style="background:#d6c7b3"></span><span class="swatch" style="background:#742e30"></span></div></div><div aria-label="Síntesis de materialidad" class="materiality-board reveal">
+<p>Las piezas del programa se conectan mediante un sistema de espacios abiertos. La vista aérea permite comprender la escala del nodo; las aproximaciones peatonales muestran cómo el proyecto transforma la circulación cotidiana en experiencia comunitaria.</p>
+</div><div class="program-gallery general-render-gallery"><div class="program-gallery-head"><span>El conjunto · recorrer</span><span>Deslizá para ver más →</span></div><div class="sector-carousel" data-carousel="true"><div class="sector-carousel-viewport"><div class="sector-carousel-track"><figure aria-label="Imagen 1 de 4" class="sector-slide"><img alt="Vista aérea del conjunto" decoding="async" loading="lazy" src="assets/ext-1-hq.webp"/><figcaption><span>Vista aérea del conjunto</span><span>La relación entre edificios, cancha, café y espacio público</span></figcaption></figure><figure aria-label="Imagen 2 de 4" class="sector-slide"><img alt="Espacio público central" decoding="async" loading="lazy" src="assets/ext-2-hq.webp"/><figcaption><span>Espacio público central</span><span>Encuentro, permanencia y paisaje frente al CIC</span></figcaption></figure><figure aria-label="Imagen 3 de 4" class="sector-slide"><img alt="Recorridos entre edificios" decoding="async" loading="lazy" src="assets/ext-3-hq.webp"/><figcaption><span>Recorridos entre edificios</span><span>Conexiones peatonales y transiciones entre programas</span></figcaption></figure><figure aria-label="Imagen 4 de 4" class="sector-slide"><img alt="Café y espacio de encuentro" decoding="async" loading="lazy" src="assets/cafe-ext-1-hq.webp"/><figcaption><span>Café y espacio de encuentro</span><span>Un uso cotidiano que activa el espacio público</span></figcaption></figure></div></div><div class="sector-carousel-nav"><div class="sector-carousel-arrows"><button aria-label="Imagen anterior" class="sector-carousel-btn" data-prev="true" type="button">←</button><button aria-label="Imagen siguiente" class="sector-carousel-btn" data-next="true" type="button">→</button></div><span class="sector-carousel-counter">01 / 04</span><div class="sector-carousel-dots"><button aria-label="Ir a imagen 1" class="sector-carousel-dot active" data-slide="0" type="button"></button><button aria-label="Ir a imagen 2" class="sector-carousel-dot" data-slide="1" type="button"></button><button aria-label="Ir a imagen 3" class="sector-carousel-dot" data-slide="2" type="button"></button><button aria-label="Ir a imagen 4" class="sector-carousel-dot" data-slide="3" type="button"></button></div></div></div></div></section><section class="section materiality"><span class="section-num">04</span><div class="materiality-grid"><div class="materiality-copy reveal"><p class="kicker">Proyecto · Materialidad y lenguaje arquitectónico</p><h2>Materiales que construyen cercanía, sombra y relación con el exterior.</h2><p>Las visualizaciones combinan tonos tierra, superficies de madera, mampostería y elementos verticales de protección que filtran la luz y construyen profundidad en las fachadas. En los interiores, esa misma paleta busca generar ámbitos próximos y reconocibles.</p><p>La materialidad no se plantea sólo como una decisión de imagen. También define filtros, sombras, transiciones entre interior y exterior y distintas condiciones para permanecer, encontrarse o circular.</p><div class="palette"><span class="swatch" style="background:#252525"></span><span class="swatch" style="background:#9e866d"></span><span class="swatch" style="background:#d6c7b3"></span><span class="swatch" style="background:#742e30"></span></div></div><div aria-label="Síntesis de materialidad" class="materiality-board reveal">
 <div class="material-word"><span>01</span><b>Ladrillo</b><small>masa · textura · pertenencia</small></div>
 <div class="material-word"><span>02</span><b>Madera</b><small>calidez · proximidad</small></div>
 <div class="material-word"><span>03</span><b>Filtros</b><small>sombra · profundidad</small></div>
 <div class="material-word"><span>04</span><b>Vegetación</b><small>transición · paisaje</small></div>
 </div></div></section><section class="aerial-statement" id="conjunto">
-<img alt="Vista aérea general del Nodo Comunitario Agrelo" src="assets/vista-aerea.webp"/>
+<img alt="Vista aérea general del Nodo Comunitario Agrelo" decoding="async" loading="lazy" src="assets/ext-1-hq.webp"/>
 <div class="aerial-copy">
 <p class="kicker light">Proyecto · El conjunto</p>
 <h2>Edificios autónomos, conectados por un espacio común.</h2>
@@ -942,10 +1129,7 @@ footer > a{white-space:nowrap}
 <span>Alcance</span>
 <p>La arquitectura puede contribuir a reducir distancias y acercar derechos, pero su funcionamiento efectivo depende también de la gestión, la participación comunitaria, las políticas públicas y la continuidad institucional.</p>
 </div>
-</section><section class="closing" id="sintesis"><img alt="Vista final del Nodo Comunitario Agrelo" src="assets/render-cierre.webp"/><div class="closing-inner"><p class="kicker light">Nodo Comunitario Agrelo</p><h2>Arquitectura para acercar derechos.</h2></div></section><footer><div class="footer-credits">
-<span>Camila Cicconi · Juan Pablo Torres</span>
-<span>Asesor: Arq. Mario Raina · Universidad de Mendoza · 2026</span>
-</div><a href="#inicio">Volver arriba ↑</a></footer>
+</section><section class="closing" id="sintesis"><img alt="Espacio público central del Nodo Comunitario Agrelo" decoding="async" loading="lazy" src="assets/ext-2-hq.webp"/><div class="closing-inner"><p class="kicker light">Nodo Comunitario Agrelo</p><h2>Arquitectura para acercar derechos.</h2></div></section><footer><div class="footer-credits"><span class="footer-thesis-line">Tesis de grado de la carrera de Arquitectura y Urbanismo (Universidad de Mendoza)</span><span class="footer-authors-line">Camila Cicconi · Juan Pablo Torres</span><span class="footer-advisor-line">Asesor: Arq. Mario Raina · 2026</span></div><a href="#inicio">Volver arriba ↑</a></footer>
 <script>const header=document.getElementById('header'),progress=document.getElementById('progress'),menu=document.getElementById('menu'),nav=document.getElementById('nav');window.addEventListener('scroll',()=>{header.classList.toggle('scrolled',scrollY>40);const m=document.documentElement.scrollHeight-innerHeight;progress.style.width=(m?scrollY/m*100:0)+'%'},{passive:true});menu.addEventListener('click',()=>nav.classList.toggle('open'));nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));const obs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('show');obs.unobserve(e.target)}}),{threshold:.1});document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));const v=document.getElementById('heroVideo');v.muted=true;v.play().catch(()=>{});v.addEventListener('error',()=>v.style.display='none');
 const video=document.getElementById('heroVideo');
 if(video){
@@ -987,4 +1171,48 @@ if(carousel){
   goTo(0);
 }
 
+
+
+document.querySelectorAll('[data-carousel]').forEach(carousel=>{
+  const track=carousel.querySelector('.sector-carousel-track');
+  const slides=[...carousel.querySelectorAll('.sector-slide')];
+  const dots=[...carousel.querySelectorAll('.sector-carousel-dot')];
+  const counter=carousel.querySelector('.sector-carousel-counter');
+  const prev=carousel.querySelector('[data-prev]');
+  const next=carousel.querySelector('[data-next]');
+  if(!track || !slides.length) return;
+
+  let current=0;
+
+  function goTo(n){
+    current=(n+slides.length)%slides.length;
+    track.style.transform=`translateX(-${current*100}%)`;
+    dots.forEach((d,i)=>d.classList.toggle('active',i===current));
+    if(counter){
+      counter.textContent=String(current+1).padStart(2,'0')+' / '+String(slides.length).padStart(2,'0');
+    }
+  }
+
+  if(prev) prev.addEventListener('click',()=>goTo(current-1));
+  if(next) next.addEventListener('click',()=>goTo(current+1));
+  dots.forEach((dot,i)=>dot.addEventListener('click',()=>goTo(i)));
+
+  let startX=null, startY=null;
+  carousel.addEventListener('pointerdown',e=>{
+    startX=e.clientX;
+    startY=e.clientY;
+  });
+  carousel.addEventListener('pointerup',e=>{
+    if(startX===null) return;
+    const dx=e.clientX-startX;
+    const dy=e.clientY-startY;
+    if(Math.abs(dx)>45 && Math.abs(dx)>Math.abs(dy)){
+      goTo(current+(dx<0?1:-1));
+    }
+    startX=null;
+    startY=null;
+  });
+
+  goTo(0);
+});
 </script></body></html>
